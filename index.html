@@ -3,40 +3,42 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
- <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <link rel="stylesheet" href="src/styles.css" />
     <title>AI Haiku generator</title>
   </head>
   <body>
     <div class="container">
-    <header><h1>Welcome to Haiku Generator🌸</h1></header>
-    <main>
-      <form id="haiku-generator" class="form">
-        <input
-          type="text"
-          placeholder="Enter topic of the haiku"
-          autofocus
-          required
-          autocomplete="off"
-          class="instructions"
-        />
-        <input type="submit" class="submit-button"/>
-      </form>
-      <div class="haiku" id="haiku">Haiku here</div>
-    </main>
-    <script src="src/index.js"></script>
-    <footer>
-      This project was coded with ❤️ by
-      <a href="https://github.com/auborealis-cyber">Aurora Thomas</a> and is
-      open-sourced on
-      <a href="https://github.com/auborealis-cyber/AI-Project" target="_blank"
-        >Github</a
-      >
-      and is hosted on
-      <a href="https://haikugeneratorai.netlify.app/" target="_blank"
-        >Netlify</a
-      >
-    </footer>
+      <header><h1>Welcome to Haiku Generator🌸</h1></header>
+      <main>
+        <form id="haiku-generator" class="form">
+          <input
+            type="text"
+            placeholder="Enter topic of the haiku"
+            autofocus
+            required
+            autocomplete="off"
+            class="instructions"
+            id="user-instructions"
+          />
+          <input type="submit" class="submit-button" />
+        </form>
+        <div class="haiku" id="haiku">Haiku here🌸🌸🌸</div>
+      </main>
+      <footer>
+        This project was coded with ❤️ by
+        <a href="https://github.com/auborealis-cyber">Aurora Thomas</a> and is
+        open-sourced on
+        <a href="https://github.com/auborealis-cyber/AI-Project" target="_blank"
+          >Github</a
+        >
+        and is hosted on
+        <a href="https://haikugeneratorai.netlify.app/" target="_blank"
+          >Netlify</a
+        >
+      </footer>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <script src="src/index.js"></script>
   </body>
 </html>
