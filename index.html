@@ -11,10 +11,11 @@
     <div class="container">
       <header><h1>Welcome to Haiku Generator🌸</h1></header>
       <main>
+        <div class="form-container">
         <form id="haiku-generator" class="form">
           <input
             type="text"
-            placeholder="Enter topic of the haiku"
+            placeholder="Enter topic of a haiku"
             autofocus
             required
             autocomplete="off"
@@ -23,7 +24,9 @@
           />
           <input type="submit" class="submit-button" />
         </form>
-        <div class="haiku" id="haiku">Haiku here🌸🌸🌸</div>
+          <small>i.e. Flowers, Rivers, Dogs</small>
+        </div>
+        <div class="haiku hidden blink" id="haiku"></div>
       </main>
       <footer>
         This project was coded with ❤️ by

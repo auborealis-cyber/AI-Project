@@ -6,17 +6,33 @@ body {
 main{
     margin-bottom: 20px;
 }
+h1 {
+  color: #c24988;
+  font-size: 36px;
+  line-height: 1.5;
+}
+
+footer{
+    text-align: center;
+    font-size:12px;
+    margin-top:30px;
+}
+
 .container {
   margin: 120px auto;
   max-width: 400px;
 }
-
-.form.form {
+.form-container{
+background-color: white;
+margin-bottom: 20px;
+ border-radius: 10px;
   padding: 30px;
-  background-color: white;
-  border-radius: 10px;
+  box-shadow: 0px 5px 5px 5px #e68aba;
+  text-align: left;
+  color: #e68aba;
+}
+.form.form {
   display: flex;
-  margin-bottom: 20px;
 }
 .instructions {
   padding: 10px;
@@ -48,14 +64,15 @@ main{
 .haiku strong{
     color:rgb(193, 71, 134);
 }
-h1 {
-  color: #c24988;
-  font-size: 36px;
-  line-height: 1.5;
+.hidden{
+    display: none;
 }
 
-footer{
-    text-align: center;
-    font-size:12px;
-    margin-top:30px;
+@keyframes blink {
+  50% {
+    opacity: 0.0;
+  }
+}
+.generating {
+  animation: blink 1s step-start 0s infinite ease-in-out;
 }
